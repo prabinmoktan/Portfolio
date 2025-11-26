@@ -4,8 +4,11 @@ import Button from "../../ui/Button";
 const Contact = () => {
   return (
     <>
-      <section id="contact">
-        <article className="text-center">
+      <section id="contact" className="w-full flex flex-col justify-center items-center mb-10">
+      <section className="md:w-2/3">
+
+      
+        <article className="text-center ">
           <h3 className="text-4xl font-bold">Let's Build Something Together</h3>
           <p className="text-gray-400 mt-4">
             I'm currently available for freelance work and full-time
@@ -34,6 +37,7 @@ const Contact = () => {
             Prabinmoktan07@gmail.com
           </a>
         </div>
+      </section>
       </section>
     </>
   );
