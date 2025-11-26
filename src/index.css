@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1d1d20;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg: #ffffff;
+  --surface: #f6f7fb;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #b8860b; /* gold-ish accent for you */
+  --card-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+  --glass: rgba(255, 255, 255, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --surface: #0f1724;
+    --text: #e6eef8;
+    --muted: #9aa6bd;
+    --accent: #d4af37; /* brighter gold in dark */
+    --card-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+    --glass: rgba(255, 255, 255, 0.03);
+  }
+}
+
+a {
+  font-weight: 500;
+  /* color: #fafafa; */
+  text-decoration: inherit;
+}
+p{
+  font-size: 0.9rem;
+}
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.underlineAnimation {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; /* optional */
+}
+
+.underlineAnimation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor; /* underline color */
+  transform-origin: left;
+  transform: scaleX(0); /* hidden initially */
+  transition: transform .3s ease-in-out;
+}
+
+.underlineAnimation:hover::after {
+  transform: scaleX(1); /* expand underline */
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+.glassmorphism {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.04);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  /* border: rgb(24, 7, 139); */
+}
