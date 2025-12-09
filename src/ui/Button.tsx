@@ -28,7 +28,7 @@ interface ButtonTypes {
       >
         {
             iconFirst &&
-            <span>{iconFirst}</span>
+            <span className="text-black dark:text-white">{iconFirst}</span>
         }
         {
             title && 

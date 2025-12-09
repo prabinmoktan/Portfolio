@@ -19,7 +19,7 @@ const Card = ({title, description, technologies, onClick, disabled } : CardTypes
    
 
    
-      <div className=" bg-black hover:bg-zinc-900 rounded-lg border border-gray-800 overflow-hidden flex flex-col gap-8 px-5 pb-5 ">
+      <div className=" dark:bg-black/60 dark:hover:bg-zinc-900 hover:bg-blue-50  rounded-lg dark:border transition-all duration-300 dark:border-gray-800 overflow-hidden flex flex-col gap-8 px-5 pb-5  ">
         <div className="overflow-hidden">
 
         <img src={ecommerce} alt="logo" className="w-full hover:scale-130 h-70 transform transition-transform duration-350 overflow-hidden"/>

@@ -8,9 +8,9 @@ import { easeInOut, motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <>
-      <section id="heroSection">
-        <section className="grid md:grid-cols-2 sm:grid-cols-1 px-24 h-[60vh] items-center">
-          <div className="flex flex-col gap-y-8 w-full">
+      <section id="heroSection ">
+        <section className="grid md:grid-cols-2 md:gap-10 sm:grid-cols-1 md:px-10 h-[60vh] items-center">
+          <div className="flex flex-col gap-y-8 w-full mt-10">
             <div>
               <p className="glassmorphism border  text-blue-500 py-2 px-12 inline-flex rounded-3xl  ">
                 Available for work
@@ -33,8 +33,8 @@ const HeroSection = () => {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, ease: easeInOut }}
               >
-                <p className="text-lg glassmorphism border border-zinc-700 px-6 py-1 text-gray-300">
-                  <strong className="text-white font-bold">+3 Years</strong>{" "}
+                <p className="text-lg glassmorphism border border-zinc-700 px-6 py-1 ">
+                  <strong className="dark:text-white font-bold">+3 Years</strong>{" "}
                   React
                 </p>
               </motion.div>
@@ -45,7 +45,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.5, ease: easeInOut }}
               >
                 <p className="text-lg glassmorphism border border-zinc-700 px-6 py-1">
-                  <strong className="text-white font-bold">Freelance</strong>{" "}
+                  <strong className="dark:text-white font-bold">Freelance</strong>{" "}
                   Mern Stack
                 </p>
               </motion.div>

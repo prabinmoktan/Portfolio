@@ -62,7 +62,7 @@ h1 {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: currentColor; /* underline color */
   transform-origin: left;
